@@ -12,11 +12,11 @@ const pool = new Pool({
 const createTable = async () => {
     const query = `
     CREATE TABLE IF NOT EXISTS carros (
-        id SERIAL PRIMARY KEY,
-        modelo VARCHAR(50),
-        preco DECIMAL(10, 2),
-        foto TEXT
-    );
+    id SERIAL PRIMARY KEY,
+    modelo VARCHAR(255),
+    preco VARCHAR(255),
+    foto VARCHAR(255)
+);
 `;
 
     try {
